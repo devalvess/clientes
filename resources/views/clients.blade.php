@@ -7,8 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    @for ($i = 0; $i <4; $i++)
-    <h2>Nome: {{$names [$i] }} </h2>
-    @endfor
+    @foreach ($names as $name)
+    <h2>{{$name}}</h2>
+    @endforeach
 </body>
 </html>
